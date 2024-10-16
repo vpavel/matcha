@@ -1,0 +1,30 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: #3f8c6a; /* Matcha green title */
+}
+
+.text {
+  margin: 1.5rem 0;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #333; /* Dark grey text */
+}

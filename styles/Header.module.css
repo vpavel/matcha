@@ -1,0 +1,161 @@
+/* Overall header layout */
+.header {
+  background-color: #eacdb9; /* Peach background */
+  padding: 1.5rem 0;
+  text-align: center;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Navbar container */
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Centered brand/title */
+.brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3f8c6a !important; /* Matcha green */
+  text-align: center;
+  flex-grow: 1;
+}
+
+.brand a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.brand a:hover {
+  color: #2d6b50; /* Darker green on hover */
+}
+
+/* Social Media Icons (left) */
+.socialIcons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #3f8c6a; /* Matcha green */
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #2d6b50; /* Darker green on hover */
+}
+
+/* Auth Icon (right) */
+.authLinks {
+  display: flex;
+  align-items: center;
+}
+
+.authLink {
+  font-size: 1.5rem;
+  color: #3f8c6a;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.authLink:hover {
+  color: #2d6b50 !important;
+}
+
+.userIcon {
+  font-size: 1.8rem;
+}
+
+/* Centered Navigation Links */
+.navLinks {
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: #944b2b !important;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #763528 !important; /* Darker matcha green on hover */
+}
+
+/* Custom Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.5rem; /* Make the hamburger icon smaller */
+  color: #3f8c6a; /* Matcha green */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+  color: #2d6b50; /* Darker green on hover */
+}
+
+/* Customize the bars inside the hamburger */
+.hamburger .navbar-toggler-icon {
+  background-image: none;
+  border: 2px solid #3f8c6a; /* Matcha green */
+  width: 25px; /* Smaller width for the bars */
+  height: 2px; /* Smaller height for the bars */
+  display: block;
+  margin: 4px 0;
+}
+
+.hamburger .navbar-toggler-icon:before,
+.hamburger .navbar-toggler-icon:after {
+  background-color: #3f8c6a; /* Matcha green for the bars */
+}
+
+.hamburger:hover .navbar-toggler-icon:before,
+.hamburger:hover .navbar-toggler-icon:after {
+  background-color: #2d6b50; /* Darker green on hover */
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: wrap !important; /* Override Bootstrap default */
+    justify-content: center !important; /* Center content */
+    align-items: center !important; /* Vertically center content */
+  }
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+  .brand {
+    font-size: 2rem;
+  }
+
+  .socialIcons {
+    display: none;
+  }
+
+  .authLinks {
+    display: none;
+  }
+
+  .navLinks {
+    margin-top: 1rem;
+  }
+
+  /* Display the customized hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}

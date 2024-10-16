@@ -1,0 +1,53 @@
+.middleSection {
+  padding: 4rem 2rem; /* Add padding around the section */
+  text-align: center;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  color: #3f8c6a; /* Matcha green for the main title */
+  margin-bottom: 3rem; /* Add space between title and cards */
+  margin-top: 0;
+}
+
+/* Cards container with flexbox */
+.cardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem; /* Add space between the cards */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+/* Each card */
+.card {
+  background-color: #d5edde;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 1; /* Allows the cards to grow and shrink evenly */
+  min-width: 250px; /* Ensures the cards don’t get too small */
+  max-width: 350px; /* Set a max width for each card */
+  min-height: 15rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  cursor: pointer; /* Make the cards clickable */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deepen the shadow on hover */
+}
+
+.cardTitle {
+  font-size: 1.75rem;
+  color: #3f8c6a; /* Matcha green for the card titles */
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 1.1rem;
+  color: #333; /* Dark grey for the description text */
+}

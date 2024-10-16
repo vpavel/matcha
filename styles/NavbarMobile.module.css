@@ -1,0 +1,53 @@
+/* Main header styles for mobile */
+.header {
+  background-color: #eacdb9;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar structure for mobile */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3f8c6a;
+}
+
+.brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.burgerMenu {
+  font-size: 2rem;
+  color: #3f8c6a;
+  cursor: pointer;
+}
+
+/* Mobile navigation links */
+.mobileNavLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.mobileNavLinks a {
+  font-size: 1.2rem;
+  color: #944b2b;
+  text-decoration: none;
+}
+
+.mobileNavLinks a:hover {
+  color: #763528;
+}

@@ -1,0 +1,9 @@
+.container {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3f8c6a;
+  align-items: center;
+  background: linear-gradient(to bottom, #eacdb9, #e0f7e9 20%);
+}

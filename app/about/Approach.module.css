@@ -1,0 +1,48 @@
+.approach {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  min-width: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+  height: auto; /* Set a height for the section */
+  gap: 5rem;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%; /* Image takes 30% of the width */
+  height: 100%; /* Image should cover the full height */
+}
+.image {
+  border-radius: 12px; /* Optional: Add rounded corners to the image */
+}
+
+.secondImage {
+  width: auto !important;
+  border-radius: 12px;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media screen and (max-width: 765px) {
+  .approach {
+    flex-wrap: wrap;
+  }
+
+  .secondImage {
+    width: 100% !important;
+    border-radius: 12px;
+  }
+}

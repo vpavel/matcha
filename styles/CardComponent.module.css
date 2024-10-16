@@ -1,0 +1,59 @@
+.card {
+  background-color: #d5edde;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px; /* Ensure the image wrapper has a fixed height */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.price {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Scope buttons inside the actions container */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Scope button styles to .actions */
+.actions button {
+  padding: 10px;
+  border: none;
+  background-color: #3f8c6a;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.actions button.details {
+  background-color: #666;
+}

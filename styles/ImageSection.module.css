@@ -1,0 +1,13 @@
+.imageContainer {
+  width: 100%;
+  height: 400px; /* Adjust this height depending on how much of the image you want to show */
+  position: relative;
+  overflow: hidden; /* Ensures the image is cropped */
+}
+
+.image {
+  object-fit: cover; /* The image will cover the container and be cropped if necessary */
+  border-radius: 12px; /* Rounded corners for the image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover transition */
+}
