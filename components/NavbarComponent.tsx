@@ -1,7 +1,7 @@
 "use client"; // Ensure this component runs on the client side
 
 import { useEffect, useState } from "react";
-import { FaInstagram, FaLinkedin, FaUser, FaBars } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaUser } from "react-icons/fa";
 import styles from "../styles/Navbar.module.css"; // Import the custom CSS
 import debounce from "@/utils/debounce";
 
